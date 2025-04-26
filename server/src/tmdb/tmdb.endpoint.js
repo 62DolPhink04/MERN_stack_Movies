@@ -27,7 +27,7 @@ const tmdbEnpoints = {
   personDetails: ({ personId }) =>
     tmdbConfig.getUrl(`person/${personId}/combined_credits`),
 
-  personMedia: ({ personId }) =>
+  personMedias: ({ personId }) =>
     tmdbConfig.getUrl(`person/${personId}/movie_credits`),
 };
 

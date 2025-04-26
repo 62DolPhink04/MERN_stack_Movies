@@ -31,7 +31,7 @@ const tmdbApi = {
   persponDetails: async ({ personId }) =>
     await axiosClient.get(tmdbEnpoints.personDetails({ personId })),
 
-  personMedia: async ({ personId }) =>
+  personMedias: async ({ personId }) =>
     await axiosClient.get(tmdbEnpoints.personDetails({ personId })),
 };
 
