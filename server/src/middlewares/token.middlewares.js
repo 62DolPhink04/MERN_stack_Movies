@@ -1,6 +1,6 @@
 import jsonwebtoken from "jsonwebtoken";
-import responseHandler from "../handlers/response.handler.js";
-import userModel from "../models/user.model.js";
+import responseHandler from "../handlers/request.handler.js";
+import userModel from "../models/model.user.js";
 
 const tokenDecode = (req) => {
   try {

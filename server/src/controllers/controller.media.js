@@ -1,4 +1,4 @@
-import responseHandler from "../handlers/response.handler";
+import responseHandler from "../handlers/response.handler.js";
 import favariteModel from "../models/model.fav.js";
 import userModel from "../models/model.user.js";
 

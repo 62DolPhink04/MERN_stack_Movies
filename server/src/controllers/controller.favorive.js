@@ -1,5 +1,5 @@
-import responseHandler from "../helpers/responseHandler.js";
-import favoriteModel from "../models/favoriteModel.js";
+import responseHandler from "../handlers/response.handler.js";
+import favoriteModel from "../models/model.favorite.js";
 
 const addfavorite = async (req, res) => {
   try {
