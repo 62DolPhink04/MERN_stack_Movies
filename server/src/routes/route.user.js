@@ -117,6 +117,7 @@ router.post(
   body("mediaTitle").exists().withMessage("mediaTitle is required"),
   body("mediaPoster").exists().withMessage("mediaPoster is required"),
   body("mediaRate").exists().withMessage("mediaRate is required"),
+  requestHandler.validate,
   favoriteController.addfavorite
 );
 
@@ -129,6 +130,7 @@ router.delete(
     .withMessage("favoriveId is required")
     .isLength({ min: 1 })
     .withMessage("favoriveId can not be empty"),
+  requestHandler.validate,
   favoriteController.removefavorite
 );
 export default router;
